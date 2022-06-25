@@ -1,14 +1,13 @@
 <?php
-
-$sname = "127.0.0.2";
-$uname = "root";
+//Inserir informações da sua conexão no banco de dados 
+$host = "";
+$user = "";
 $password = "";
+$database = "db_pdwel";
 
-$db_name = "db_pdwel";
+$conn = mysqli_connect($host, $user, $password, $database);
 
-$conn = mysqli_connect($sname, $uname, $password, $db_name);
-
-if(!conn){
+if(!$conn){
     echo "Conexão falhou";
 } else {
     return $conn;
