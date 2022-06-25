@@ -38,7 +38,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4">
-                    <?php if ($_GET['error'] != '') { ?>
+                    <?php if (isset($_GET['error'])) { ?>
                     <div id="login-alert" class="alert alert-danger col-sm-12">
                         <?php echo $_GET['error']; ?>
                     </div>
