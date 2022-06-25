@@ -14,6 +14,6 @@ if (isset($_POST['email']) && isset($_POST['senha'])) {
         $_SESSION['name'] = $user['ds_name'];
         header("Location: ../view/home.php");
     } else {
-        header("Location: ../index.php?error=Ocorreu um erro");
+        header("Location: ../index.php?error=Usuário incorreto!");
     }
 }
