@@ -73,10 +73,16 @@
                     <!--card-->
                     <br>
                     <?php if (isset($_GET['success'])) { ?>
-                        <div id="login-alert" class="alert alert-success col-md-12">
+                        <div id="success-alert" class="alert alert-success col-md-12">
                             <?php echo $_GET['success']; ?>
                         </div>
-                        <!--login-alert-->
+                        <!--success-alert-->
+                    <?php } ?>
+                    <?php if (isset($_GET['error'])) { ?>
+                        <div id="error-alert" class="alert alert-danger col-md-12">
+                            <?php echo $_GET['error']; ?>
+                        </div>
+                        <!--error-alert-->
                     <?php } ?>
                     <!--Lastest users-->
                     <div class="card">
