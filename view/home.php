@@ -25,7 +25,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10">
-                    <h1><i class="bi bi-house"></i>Home <small>Racha conta companion</small></h1>
+                    <h1><i class="bi bi-house"></i> Home <small>Racha conta companion</small></h1>
                 </div>
                 <!--col-md-10-->
             </div>
