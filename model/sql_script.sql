@@ -1,5 +1,5 @@
 CREATE DATABASE db_pdwel;
-USE bd_pdwel;
+USE db_pdwel;
 
 CREATE TABLE usuarios(
 	id INT NOT NULL AUTO_INCREMENT,
