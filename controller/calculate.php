@@ -25,10 +25,10 @@ if (isset($_POST['calcular']))
         )
     )
 
-    $tamanhoArray = $testeArray.size
+    $tamanhoArray = $testeArray.sizeof
 
     $name = formatacaoCadastro($_POST['name']);
-    $personValue = ($_POST['personValue']);
+    $personValue = $_POST['personValue'];
     $people = $_POST['people'];
 
     $userData = 'name='.$name. '&personValue='.$personValue. '&people='.$people;

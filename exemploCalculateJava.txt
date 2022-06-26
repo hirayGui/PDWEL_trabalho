@@ -1,0 +1,35 @@
+package steps;
+
+public class teste {
+
+    String valorArray[][] = new String[5][3];
+
+    public static void main(String[] args) {
+        Object valorArray[][] = {{"Vitor", 30.0, 2}, {"Gui", 270.0, 1}, {"Rodrigo", 0.0, 3}};
+        
+        Object array[][] = valorArray;
+
+        int tamanhoArray = array.length;
+        int quantidadePessoas = 0;
+        double valorTotal = 0;
+        for (int x = 0; x < tamanhoArray; x++) {
+            quantidadePessoas = quantidadePessoas + (int) array[x][2];
+            valorTotal = valorTotal + (double) array[x][1];
+        }
+
+        double valorPessoa = valorTotal / quantidadePessoas;
+
+        for (int x = 0; x < tamanhoArray; x++) {
+            String nome = (String) array[x][0];
+            int pagantes = (int) array[x][2];
+            double valorGasto = (double) array[x][1];
+            double valorDevePagar = pagantes * valorPessoa;
+            double diferencaValor = valorDevePagar - valorGasto;
+            if (diferencaValor < 0) {
+                System.out.println("O valor que " + nome + " deve receber é: R$" + (diferencaValor * -1));
+            } else {
+                System.out.println("O valor que " + nome + " deve pagar é: R$" + diferencaValor);
+            }
+        }
+    }
+}
