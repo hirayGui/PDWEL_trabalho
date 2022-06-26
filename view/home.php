@@ -90,7 +90,7 @@
                             <h3 class="card-title">Usuários</h3>
                         </div>
                         <!--card-header-->
-                        <div class="card-body">
+                        <div class="card-body table-responsive">
                             <?php if (mysqli_num_rows($result)) { ?>
                                 <table class="table table-striped table-hover">
                                     <tr>
