@@ -11,3 +11,18 @@ CREATE TABLE usuarios(
     PRIMARY KEY(id)
 	);
 
+//inserir um usuario na tabela para poder acessar a aplicacao
+INSERT INTO usuarios (
+    nome, 
+    email, 
+    senha, 
+    telefone, 
+    pix
+    )
+VALUES (
+    'nome', 
+    'email', 
+    'senha', 
+    'telefone', 
+    'chave pix'
+    );
