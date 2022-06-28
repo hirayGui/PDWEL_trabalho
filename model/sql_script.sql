@@ -8,7 +8,7 @@ CREATE TABLE usuarios(
     senha VARCHAR(55) NOT NULL,
     telefone VARCHAR(15) NOT NULL,
     pix VARCHAR(100) NOT NULL,
-    valor_gasto DOUBLE(4,2) NOT NULL,
+    valor_gasto DOUBLE(7,2) NOT NULL,
     PRIMARY KEY(id)
 	);
 
