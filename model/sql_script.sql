@@ -8,6 +8,7 @@ CREATE TABLE usuarios(
     senha VARCHAR(55) NOT NULL,
     telefone VARCHAR(15) NOT NULL,
     pix VARCHAR(100) NOT NULL,
+    valor_gasto DOUBLE(4,2) NOT NULL,
     PRIMARY KEY(id)
 	);
 
@@ -17,12 +18,14 @@ INSERT INTO usuarios (
     email, 
     senha, 
     telefone, 
-    pix
+    pix,
+    valor_gasto
     )
 VALUES (
     'nome', 
     'email', 
     'senha', 
     'telefone', 
-    'chave pix'
+    'chave pix',
+    'valor gasto'
     );

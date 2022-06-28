@@ -38,28 +38,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4">
+                    <h2 style="text-align:center">Login</h2>
                     <?php if (isset($_GET['error'])) { ?>
-                    <div id="login-alert" class="alert alert-danger col-sm-12">
-                        <?php echo $_GET['error']; ?>
-                    </div>
-                    <!--login-alert-->
+                        <div id="login-alert" class="alert alert-danger col-sm-12">
+                            <?php echo $_GET['error']; ?>
+                        </div>
+                        <!--login-alert-->
                     <?php } ?>
                     <form method="POST" id="login" class="well" action="controller/loginUser.php" role="form">
                         <div class="form-group">
                             <label>Email</label>
-                            <input required type="text" class="form-control" placeholder="Insira seu email" name="email"
-                                value='<?php if (!empty($_POST["email"])) {
+                            <input required type="text" class="form-control" placeholder="Insira seu email" name="email" value='<?php if (!empty($_POST["email"])) {
                                                                                                                                     echo $_POST["email"];
                                                                                                                                 } ?>'>
                         </div>
                         <!--form-group-->
                         <div class="form-group">
                             <label>Senha</label>
-                            <input required type="password" class="form-control" placeholder="Insira sua senha"
-                                name="senha"
-                                value='<?php if (!empty($_POST["senha"])) {
-                                                                                                                                            echo $_POST["senha"];
-                                                                                                                                        } ?>'>
+                            <input required type="password" class="form-control" placeholder="Insira sua senha" name="senha" value='<?php if (!empty($_POST["senha"])) {
+                                                                                                                                        echo $_POST["senha"];
+                                                                                                                                    } ?>'>
                         </div>
                         <!--form-group-->
                         <input type="submit" class="btn btn-default btn-block" name="login" value="Login">
@@ -76,8 +74,7 @@
     <!--main-->
 
     <!--Importando scripts-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 

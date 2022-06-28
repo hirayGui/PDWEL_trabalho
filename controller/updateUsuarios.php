@@ -28,13 +28,14 @@ if (isset($_GET['id'])) {
     $password = $_POST['password'];
     $cel = $_POST['cel'];
     $pix = $_POST['pix'];
+    $valor = $_POST['valor'];
 
-    $userData = 'name=' . $name . '&email=' . $email . '&password=' . $password . '&cel=' . $cel . '&pix=' . $pix;
+    $userData = 'name=' . $name . '&email=' . $email . '&password=' . $password . '&cel=' . $cel . '&pix=' . $pix . '$valor=' . $valor;
 
-    if (empty($name) || empty($email) || empty($password) || empty($cel) || empty($pix)) {
+    if (empty($name) || empty($email) || empty($password) || empty($cel) || empty($pix) || empty($valor)) {
         header("Location: ../view/editUsuario.php?error=Todos os campos são obrigatórios!");
     } else {
-        $sql = "UPDATE usuarios SET nome = '$name', email = '$email', senha = '$password', telefone = '$cel', pix = '$pix' WHERE id = '$id'";
+        $sql = "UPDATE usuarios SET nome = '$name', email = '$email', senha = '$password', telefone = '$cel', pix = '$pix', valor_gasto = '$valor' WHERE id = '$id'";
         $result = mysqli_query($conn, $sql);
         if ($result) {
             header("Location: ../view/home.php?id=$id&success=Informações Alteradas com sucesso!");

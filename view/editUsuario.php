@@ -73,6 +73,11 @@ include_once("../controller/updateUsuarios.php");
                             <label>Chave pix</label>
                             <input required type="text" class="form-control" placeholder="Insira a chave pix" name="pix" value='<?php echo $row['pix'] ?>'>
                         </div>
+                        <div class="form-group">
+                            <label>Valor gasto</label>
+                            <input required type="number" class="form-control" placeholder="Insira o valor gasto" name="valor" value='<?php echo $row["valor_gasto"]; ?>'>
+                        </div>
+                        <!--form-group-->
                         <!--form-group-->
                         <div class="d-grip gap-2">
                             <button type="submit" class="btn btn-primary btn-block" name="editar">Confirmar Edição</button><a href="home.php" class="btn btn-danger btn-block">Voltar</a>

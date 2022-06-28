@@ -80,6 +80,13 @@
                                                                                                                                 } ?>'>
                         </div>
                         <!--form-group-->
+                        <div class="form-group">
+                            <label>Valor gasto</label>
+                            <input required type="number" class="form-control" placeholder="Insira o valor gasto" name="valor" value='<?php if (!empty($_GET["valor"])) {
+                                                                                                                                            echo $_GET["valor"];
+                                                                                                                                        } ?>'>
+                        </div>
+                        <!--form-group-->
                         <div class="d-grip gap-2">
                             <button type="submit" class="btn btn-primary btn-block" name="cadastrar">Cadastrar</button><a href="home.php" class="btn btn-danger btn-block">Voltar</a>
                         </div>

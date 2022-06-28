@@ -98,6 +98,7 @@
                                         <th>Email</th>
                                         <th>Telefone</th>
                                         <th>Pix</th>
+                                        <th>Valor gasto</th>
                                         <th></th>
                                         <th></th>
                                     </tr>
@@ -107,6 +108,7 @@
                                             <td><?php echo $rows['email'] ?></td>
                                             <td><?php echo $rows['telefone'] ?></td>
                                             <td><?php echo $rows['pix'] ?></td>
+                                            <td>R$<?php echo $rows['valor_gasto'] ?></td>
                                             <td><a href="editUsuario.php?id=<?php echo $rows['id'] ?>" class="btn btn-default"><i class="bi bi-pencil-fill"></i> Editar</a></td>
                                             <td><a href="../controller/deleteUser.php?id=<?php echo $rows['id'] ?>" class="btn btn-danger"><i class="bi bi-trash3-fill"></i> Excluir</a></td>
                                         </tr>
